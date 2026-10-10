@@ -8,12 +8,15 @@
 </head>
 <body>
   <main>
-    <p id="status">Finding your city…</p>
+    <p id="status">Finding your approximate location…</p>
     <h1 id="city" hidden></h1>
     <p id="details" hidden></p>
+    <button id="preciseBtn" type="button">Share precise location</button>
     <p class="notice">
-      This page looks up your approximate location from your IP address
-      and shares the city with the site owner. No exact location is collected.
+      This page first shows your approximate city based on your network.
+      Tapping "Share precise location" asks your browser's permission to use
+      GPS/WiFi for an exact location — nothing precise is collected unless
+      you approve that prompt. Results are shared with the site owner.
     </p>
   </main>
   <script src="script.js"></script>
